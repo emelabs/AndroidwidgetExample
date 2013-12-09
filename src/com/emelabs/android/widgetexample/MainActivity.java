@@ -1,4 +1,4 @@
-package com.example.widget;
+package com.emelabs.android.widgetexample;
 
 
 import android.app.Activity;

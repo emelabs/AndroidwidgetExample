@@ -1,4 +1,4 @@
-package com.example.widget;
+package com.emelabs.android.widgetexample;
 
 import java.util.Random;
 
@@ -15,6 +15,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 	
 	private static final String TAG = "MyWidgetProvider";
 	
+	private long seed;
 	
 	
 	@Override
