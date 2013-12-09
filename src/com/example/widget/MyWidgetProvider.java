@@ -38,14 +38,14 @@ public class MyWidgetProvider extends AppWidgetProvider {
 
 			
 			// Register an onClick intent
-			Intent intent = new Intent(context, MyWidgetProvider.class);
-
-			intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+			Intent intent = new Intent(context, MainActivity.class);
 			intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
 
-			PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 			remoteViews.setOnClickPendingIntent(R.id.update, pendingIntent);
 			appWidgetManager.updateAppWidget(widgetId, remoteViews);
 		}
+		
+		super.onUpdate(context, appWidgetManager, appWidgetIds);
 	}
 }
