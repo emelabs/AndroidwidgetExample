@@ -39,7 +39,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 			
 			// Register an onClick intent
 			Intent intent = new Intent(context, MainActivity.class);
-			intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
+			intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
 
 			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 			remoteViews.setOnClickPendingIntent(R.id.update, pendingIntent);
