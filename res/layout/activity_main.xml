@@ -12,16 +12,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="20dp"
-        android:ems="10" />
+        android:text="@string/offset" />
 
     <Button
         android:id="@+id/btSave"
@@ -32,5 +23,15 @@
         android:layout_marginTop="48dp"
         android:onClick="onSave"
         android:text="Save" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:inputType="numberSigned" />
 
 </RelativeLayout>

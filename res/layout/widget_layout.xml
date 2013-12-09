@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_margin="20dip"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Static Text" >
+        android:text="" >
     </TextView>
 
 </LinearLayout>
