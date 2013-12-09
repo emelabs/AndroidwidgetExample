@@ -40,7 +40,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 			Log.i(TAG, "[onUpdate] offset:" + offset + " | value:" + String.valueOf(number));
 			
 			// Set the text
-			remoteViews.setTextViewText(R.id.update, String.valueOf(number));
+			remoteViews.setTextViewText(R.id.tvValue, String.valueOf(number));
 
 			
 			// Register an onClick intent
@@ -48,7 +48,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 			intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
 
 			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
-			remoteViews.setOnClickPendingIntent(R.id.update, pendingIntent);
+			remoteViews.setOnClickPendingIntent(R.id.tvValue, pendingIntent);
 			appWidgetManager.updateAppWidget(widgetId, remoteViews);
 		}
 		
