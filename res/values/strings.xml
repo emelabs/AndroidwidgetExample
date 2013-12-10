@@ -3,7 +3,7 @@
 
     <string name="app_name">Widget Example</string>
     <string name="action_settings">Settings</string>
-    <string name="offset">Offset</string>
-	<string name="loading">loading</string>
+    <string name="offset">Define offset</string>
+	<string name="loading">loading..</string>
 	<string name="action_save">Save</string>
 </resources>
